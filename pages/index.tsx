@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Navbar } from '../components/Navbar/Navbar'
 import { CurrencyService } from '../service/currency'
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
   }, [])
   return (
     <div>
-      <Navbar />
       <h1>Hola Crypto next js</h1>
       {listCurrency.map((currency) => (
         <div key={currency.id}>

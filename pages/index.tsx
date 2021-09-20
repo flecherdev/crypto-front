@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { CurrencyService } from '../service/currency'
+import { CurrencyService } from '@currency'
 
 const Home = () => {
   const [listCurrency, setLitCurrency] = useState<ICurrency[]>([])

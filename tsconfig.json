@@ -3,7 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@currency": ["service/currency.ts"],
-      "@rates": ["service/rates.ts"]
+      "@rates": ["service/rates.ts"],
+      "@components/*": ["components/*"]
     },
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],

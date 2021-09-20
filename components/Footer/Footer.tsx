@@ -23,7 +23,7 @@ export const Footer = () => {
               <Header as="h4" content="About" />
               <List>
                 <List.Item>
-                  <Link href="/home">
+                  <Link href="/">
                     <a>All currencies</a>
                   </Link>
                 </List.Item>
@@ -32,7 +32,7 @@ export const Footer = () => {
             <Grid.Column width={7}>
               <Header as="h4">Done for</Header>
               <p>
-                <a href="https://steplix.com/">Startup Argentina</a> for{' '}
+                <a href="https://steplix.com/">Steplix Startup Argentina</a> for{' '}
                 <a href="https://twitter.com/flecherdev">@flecherdev</a>
               </p>
               <List horizontal style={{ display: 'flex' }}>

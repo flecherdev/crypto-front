@@ -15,7 +15,7 @@ export const Navbar = () => {
             Currencies
           </Menu.Item>
         </Link>
-        <Link href="/about" passHref>
+        <Link href="/currencies/addcurrency" passHref>
           <Menu.Item active={pathname === '/new'}>
             <img src="/img/new-currency.png" />
             New Currency

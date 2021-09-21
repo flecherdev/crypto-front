@@ -8,7 +8,9 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <div className={styles.container}>
       <Navbar />
-      <Container>{children}</Container>
+      <Container as="main" text>
+        {children}
+      </Container>
       <Footer />
     </div>
   )

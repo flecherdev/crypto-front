@@ -5,7 +5,15 @@ import footer from './footer.module.css'
 
 export const Footer = () => {
   return (
-    <Segment vertical as="footer" className={footer.segment}>
+    <Segment
+      vertical
+      as="footer"
+      style={{
+        padding: '4em 0em 0em 2em',
+        marginTop: '3em',
+        borderTop: '1px solid #f2f2f2',
+      }}
+    >
       <Container text>
         <Grid stackable>
           <Grid.Row>
@@ -50,8 +58,8 @@ export const Footer = () => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <div className={footer.material}>
-          <p className={footer.material__content}>
+        <div className="material">
+          <p className="material__content">
             Icons made by{' '}
             <a
               target="_blank"
@@ -71,6 +79,17 @@ export const Footer = () => {
           </p>
         </div>
       </Container>
+      <style jsx>{`
+        .material {
+          text-align: center;
+          margin-top: 3.2rem;
+          font-size: 0.8rem;
+        }
+        .material {
+          color: grey;
+          margin-bottom: 0;
+        }
+      `}</style>
     </Segment>
   )
 }

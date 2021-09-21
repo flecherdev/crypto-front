@@ -1,14 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
-
 const CurrencyRates = () => {
-  const router = useRouter()
-  return (
-    <div>
-      Esta es la pagina de los rates
-      {router.query.rates}
-    </div>
-  )
+  return <div>Esta es la pagina de los rates</div>
 }
 
 export default CurrencyRates

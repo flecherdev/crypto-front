@@ -10,5 +10,14 @@ export class CurrencyService {
 
   async getById() {}
 
-  async upsert() {}
+  async upsert(currency: ICurrency) {
+    const res = await fetch(this.url, {
+      body: JSON.stringify(currency),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    })
+    return res
+  }
 }

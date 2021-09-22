@@ -10,7 +10,6 @@ const Home = () => {
       .getAll()
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.body)
         setLitCurrency(data.body)
       })
   }, [])
@@ -19,7 +18,7 @@ const Home = () => {
       <Grid>
         <Grid.Row>
           {listCurrency.map((currency) => (
-            <Grid.Column width={5}>
+            <Grid.Column key={currency.id} width={5}>
               <Card>
                 <Card.Content>
                   <Image

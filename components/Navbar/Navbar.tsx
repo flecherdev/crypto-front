@@ -15,14 +15,14 @@ export const Navbar = () => {
             Currencies
           </Menu.Item>
         </Link>
-        <Link href="/currencies/addcurrency" passHref>
-          <Menu.Item active={pathname === '/new'}>
+        <Link href="/rates/addrate" passHref>
+          <Menu.Item active={pathname === '/addrate'}>
             <img src="/img/new-currency.png" />
-            New Currency
+            New Rate
           </Menu.Item>
         </Link>
-        <Link href="/about" passHref>
-          <Menu.Item active={pathname === '/about'}>
+        <Link href="/statistic/rates" passHref>
+          <Menu.Item active={pathname === '/rates'}>
             <img src="/img/investment.png" />
             Statistic
           </Menu.Item>

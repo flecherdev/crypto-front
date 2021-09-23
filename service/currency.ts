@@ -4,8 +4,8 @@ export class CurrencyService {
   constructor() {}
 
   async getAll() {
-    const response = await fetch(this.url)
-    return response
+    const res = await fetch(this.url)
+    return res
   }
 
   async getById() {}

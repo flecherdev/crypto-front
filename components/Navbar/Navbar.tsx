@@ -18,7 +18,7 @@ export const Navbar = () => {
         <Link href="/rates/addrate" passHref>
           <Menu.Item active={pathname === '/addrate'}>
             <img src="/img/new-currency.png" />
-            New Rate
+            New Quote
           </Menu.Item>
         </Link>
         <Link href="/statistic/rates" passHref>

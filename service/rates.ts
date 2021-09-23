@@ -4,7 +4,10 @@ export class RatesService {
 
   async getAll() {}
 
-  async getById() {}
+  async getBySymbol(symbol: string) {
+    const res = await fetch(`${this.url}/${symbol}`)
+    return res
+  }
 
   async upsert(rate: IRates) {
     const res = await fetch(this.url, {

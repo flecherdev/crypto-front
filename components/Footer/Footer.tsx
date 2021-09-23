@@ -9,7 +9,7 @@ export const Footer = () => {
       vertical
       as="footer"
       style={{
-        padding: '4em 0em 0em 2em',
+        padding: '4em 0em',
         marginTop: '3em',
         borderTop: '1px solid #f2f2f2',
       }}
@@ -85,7 +85,7 @@ export const Footer = () => {
           margin-top: 3.2rem;
           font-size: 0.8rem;
         }
-        .material {
+        .material__content {
           color: grey;
           margin-bottom: 0;
         }

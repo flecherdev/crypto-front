@@ -23,6 +23,9 @@ type IRates = {
 }
 
 type IRateResponse = {
-  IRates
+  id: number
+  created_at: Date
+  id_currency: number
   currency: ICurrency
+  value: string
 }

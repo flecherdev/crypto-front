@@ -139,7 +139,7 @@ export default function AddRate() {
               <Table.Cell>{requestRate?.currency.symbol}</Table.Cell>
             </Table.Row>
             <Table.Row>
-              <Table.Cell>Create Ar</Table.Cell>
+              <Table.Cell>Create At</Table.Cell>
               <Table.Cell>{requestRate?.created_at}</Table.Cell>
             </Table.Row>
             <Table.Row>

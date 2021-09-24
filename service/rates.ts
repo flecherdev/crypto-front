@@ -9,6 +9,12 @@ export class RatesService {
     return res
   }
 
+  async getBySymbolAndLimit(symbol: string, count: string) {
+    const res = await fetch(`${this.url}/${symbol}/${count}`)
+    console.log(`${this.url}/${symbol}/${count}`)
+    return res
+  }
+
   async upsert(rate: IRates) {
     const res = await fetch(this.url, {
       body: JSON.stringify(rate),

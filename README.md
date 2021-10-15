@@ -1,5 +1,9 @@
 # Proyect Front End Crypto in Next js
 
+# First
+
+In terminal run the command yarn install
+
 # Run
 
 - yarn dev

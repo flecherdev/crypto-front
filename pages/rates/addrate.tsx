@@ -91,7 +91,8 @@ export default function AddRate() {
           <Form.Field
             onChange={onCotizacion}
             control={Input}
-            type="text"
+            type="number"
+            step="0.01"
             label="Amount"
             placeholder="Value"
           />
